@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 1rem;
+}
+
+.logo-icon {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav {
+  display: none;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+.logo-icon {
+  margin-left: 1rem;
+}
+
+.nav-content {
+  color: #00000080;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#active {
+  color: #000;
+}
+
+.top-button {
+  display: none;
+  width: 146px;
+  height: 46px;
+  border-radius: 5px;
+  border: 1px solid #ff5757;
+  background: #f8f5f5;
+  color: #ff5757;
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .top-button {
+    display: flex;
+  }
+}
+
+.top-button:hover {
+  background: #ff5757;
+  color: #f2f2f2;
+  box-shadow: 0 0 20px 0 #ff575780;
+}
+.main-section {
+  max-width: 1280;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.6rem;
+  align-items: center;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+.content-left {
+  text-align: center;
+  animation: slideFromLeft 1s ease forwards;
+  opacity: 0;
+  /* border: 2px solid red; */
+}
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.section-tittle {
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  padding: 1.5rem;
+}
+.s1 {
+  color: #ff5757;
+}
+.section-description {
+  font-size: 1.25rem;
+  color: gray;
+}
+.section-button {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: none;
+  background: #ff5757;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+.section-button:hover {
+  border-radius: 5px;
+  border: 2px solid #ff5757;
+  background: #fff;
+  color: #ff5757;
+  box-shadow: 0px 0px 11px 0px #FF5757;
+}
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-container {
+  height: 30vh;
+  margin: 1rem;
+  padding: 0.5rem;
+  animation: slideFromLeft 1s ease forwards;
+  opacity: 0;
+}
+.section-image {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main-section {
+    flex-direction: row;
+  }
+  .content-left {
+    padding-left: 0;
+    margin-left: 8rem;
+    max-width: 50%;
+    text-align: left;
+    line-height: 2rem;
+  }
+  .section-tittle {
+    padding-left: 0;
+  }
+  .image-container {
+    margin-top: 2rem;
+    height: 50vh;
+  }
+  .section-tittle {
+    font-size: 3rem;
+  }
+  .section-description {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+}
+.project-heading{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.Tbe-Projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  animation: slideFromLeft 1s ease forwards; 
+  height: 50vh;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 16rem;
+  border: 1px solid rgba(255, 87, 87, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+background: rgba(255, 87, 87, 0.10);
+
+}
+.project-card:hover {
+  box-shadow: 0px 0px 11px 0px #FF5757;
+}
+.card-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.card-image {
+  height: 9rem;
+}
+.card-txt {
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 500;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+}
+.card-description {
+  color: rgba(30, 30, 30, 0.9);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
